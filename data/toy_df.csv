@@ -1,0 +1,7 @@
+question,type,columns_used,column_types,sample_answer,dataset,float_answer,answer_coords
+What is the age of the youngest billionaire?,number,['age'],['number[UInt8]'],32.0,001_Forbes.csv,32.0,"[(11, 5)]"
+What's the rank of the wealthiest non-self-made billionaire?,number,"['selfMade', 'rank']","['boolean', 'number[uint16]']",288,001_Forbes.csv,288.0,"[(14, 6)]"
+Which category does the richest billionaire belong to?,category,"['finalWorth', 'category']","['number[uint32]', 'category']",Food & Beverage,001_Forbes.csv,,"[(7, 8)]"
+What's the country of origin of the oldest billionaire?,category,"['age', 'country']","['number[UInt8]', 'category']",United Kingdom,001_Forbes.csv,,"[(18, 10)]"
+What's the gender of the billionaire with the highest philanthropy score?,category,"['philanthropyScore', 'gender']","['number[UInt8]', 'category']",M,001_Forbes.csv,,"[(0, 4)]"
+What's the source of wealth for the youngest billionaire?,category,"['age', 'source']","['number[UInt8]', 'category']",fintech,001_Forbes.csv,,"[(11, 9)]"
