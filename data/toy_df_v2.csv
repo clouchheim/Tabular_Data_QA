@@ -9,93 +9,93 @@ How many unique passenger classes are present in the dataset?,number,[Pclass],['
 What's the maximum age of the passengers?,number,[Age],['number[UInt8]'],69.0,002_Titanic.csv,69.0,"[(0, 0)]"
 Which passenger class has the highest number of survivors?,category,"[Pclass, Survived]","['number[uint8]', 'boolean']",3,002_Titanic.csv,3.0,"[(0, 4), (2, 4), (3, 4), (5, 4), (6, 4), (8, 4), (12, 4), (14, 4), (15, 4), (16, 4), (18, 4)]"
 What's the most common gender among the survivors?,category,"[Sex, Survived]","['category', 'boolean']",female,002_Titanic.csv,,"[(12, 2)]"
-What is the maximum fare amount charged for a trip?,number,['fare_amount'],['number[double]'],40.8,004_Taxi.csv,40.8,
-How many unique pickup locations are in the dataset?,number,['PULocationID'],['number[uint16]'],18,004_Taxi.csv,18.0,
-What is the average tip amount given by passengers?,number,['tip_amount'],['number[double]'],1.5,004_Taxi.csv,1.5,
-Which payment type is the most common in the dataset?,category,['payment_type'],['number[uint8]'],1,004_Taxi.csv,1.0,
-Which vendor has the most trips recorded?,category,['VendorID'],['number[uint8]'],2,004_Taxi.csv,2.0,
-What is the most common drop-off location?,category,['DOLocationID'],['number[uint16]'],90,004_Taxi.csv,90.0,
-On which date did the first recorded trip occur?,category,['tpep_pickup_datetime'],"['date[ns, UTC]']",2023-02-01,004_Taxi.csv,,
-What's the total number of unique agencies handling complaints?,number,['agency'],['category'],7,005_NYC.csv,7.0,
-How many complaints were raised at midnight?,number,['hour'],['number[uint8]'],2,005_NYC.csv,2.0,
-How many unique descriptors are present in the dataset?,number,['descriptor'],['category'],16,005_NYC.csv,16.0,
-Which borough has the most complaints?,category,['borough'],['category'],QUEENS,005_NYC.csv,,
-Which month sees the highest number of complaints?,category,['month_name'],['category'],January,005_NYC.csv,,
-Which weekday has the least complaints?,category,['weekday_name'],['category'],Thursday,005_NYC.csv,,
-Which agency is least frequently handling complaints?,category,['agency'],['category'],DOHMH,005_NYC.csv,,
-How many unique clubs are there in the dataset?,number,['Club<gx:category>'],['category'],19,007_Fifa.csv,19.0,
-What is the highest value (in €) of a player in the dataset?,number,['Value_€<gx:currency>'],['number[uint32]'],13500000,007_Fifa.csv,13500000.0,
-How many players have the position 'ST'?,number,['Position<gx:category>'],['category'],1,007_Fifa.csv,1.0,
-What is the most common nationality in the dataset?,category,['Nationality<gx:category>'],['category'],Ghana,007_Fifa.csv,,
-What is the most common preferred foot amongst players?,category,['Preferred Foot<gx:category>'],['category'],Right,007_Fifa.csv,,
-Which club has the most players in the dataset?,category,['Club<gx:category>'],['category'],Lech Poznań,007_Fifa.csv,,
-What is the most common position of players in the dataset?,category,['Position<gx:category>'],['category'],SUB,007_Fifa.csv,,
-How many unique states are represented in the dataset?,number,[st],['category'],12,008_Tornados.csv,12.0,
-What is the highest magnitude of tornado recorded in the dataset?,number,[mag],['number[int8]'],2,008_Tornados.csv,2.0,
-What is the longest length of a tornado path in the dataset?,number,[len],['number[double]'],72.2,008_Tornados.csv,72.2,
-What is the maximum number of injuries caused by a single tornado?,number,[inj],['number[uint16]'],3,008_Tornados.csv,3.0,
-Which state has experienced the most tornadoes?,category,[st],['category'],IL,008_Tornados.csv,,
-In which month do most tornadoes occur?,category,[mo],['number[uint8]'],6,008_Tornados.csv,6.0,
-On what date did the most destructive tornado (by injuries) occur?,category,"[date, inj]","['date[ns, UTC]', 'number[uint16]']",1973-03-15,008_Tornados.csv,,
-On what date did the longest tornado (by path length) occur?,category,"[date, len]","['date[ns, UTC]', 'number[double]']",1955-06-04,008_Tornados.csv,,
-What is the highest recorded precipitation in inches?,number,[PRCP],['number[double]'],0.66,009_Central.csv,0.66,
-What is the lowest minimum temperature recorded?,number,[TMIN],['number[Int8]'],-13.0,009_Central.csv,-13.0,
-What is the highest maximum temperature recorded?,number,[TMAX],['number[UInt8]'],81.0,009_Central.csv,81.0,
-What is the deepest recorded snow depth in inches?,number,[SNWD],['number[UInt8]'],4.0,009_Central.csv,4.0,
-On which date was the highest precipitation recorded?,category,"[DATE, PRCP]","['date[ns, UTC]', 'number[double]']",1891-07-24,009_Central.csv,,
-On which date was the lowest minimum temperature recorded?,category,"[DATE, TMIN]","['date[ns, UTC]', 'number[Int8]']",1917-12-30,009_Central.csv,,
-On which date was the highest maximum temperature recorded?,category,"[DATE, TMAX]","['date[ns, UTC]', 'number[UInt8]']",1891-07-24,009_Central.csv,,
-On which date was the deepest snow depth recorded?,category,"[DATE, SNWD]","['date[ns, UTC]', 'number[UInt8]']",1945-02-03,009_Central.csv,,
-What is the average age of the reviewers?,number,[Age],['number[uint8]'],39.65,010_ECommerce.csv,39.65,
-What's the highest number of positive feedback received for a review?,number,[Positive Feedback Count],['number[uint8]'],19,010_ECommerce.csv,19.0,
-What is the most common rating given by reviewers?,number,[Rating],['number[uint8]'],5,010_ECommerce.csv,5.0,
-How many unique clothing items are there in the dataset?,number,[Clothing ID],['number[uint16]'],20,010_ECommerce.csv,20.0,
-Which department has the most reviews?,category,['Department Name'],['category'],Dresses,010_ECommerce.csv,,
-Which class of clothing is most commonly reviewed?,category,['Class Name'],['category'],Dresses,010_ECommerce.csv,,
-Which division is most commonly mentioned in the reviews?,category,['Division Name'],['category'],General,010_ECommerce.csv,,
-What is the most frequently reviewed clothing item? If you find a tie answer with row order.,category,['Clothing ID'],['number[uint16]'],1095,010_ECommerce.csv,1095.0,
-How many unique types of incident categories are there in the dataset?,number,[Incident Category],['category'],11,011_SF.csv,11.0,
-What's the total number of incidents reported online?,number,[Filed Online],['boolean'],1,011_SF.csv,1.0,
-How many different police districts are there in the dataset?,number,[Police District],['category'],9,011_SF.csv,9.0,
-What is the average incident count per year?,number,[Incident Year],['number[uint16]'],3.3333333333333335,011_SF.csv,3.3333333333333335,
-What is the most common incident category?,category,[Incident Category],['category'],Larceny Theft,011_SF.csv,,
-Which day of the week has the highest number of incidents?,category,[Incident Day of Week],['category'],Saturday,011_SF.csv,,
-What is the most common resolution for incidents reported online?,category,"[Filed Online, Resolution]","['boolean', 'category']",Open or Active,011_SF.csv,,
-What is the Police District with the most incidents?,category,[Police District],['category'],Northern,011_SF.csv,,
-What is the maximum age of patients in the dataset?,number,['Age'],['number[uint8]'],69,012_Heart.csv,69.0,
-What is the minimum resting blood pressure among the patients?,number,['RestingBP'],['number[uint8]'],95,012_Heart.csv,95.0,
-What is the average cholesterol level in the dataset?,number,['Cholesterol'],['number[uint16]'],207.8,012_Heart.csv,207.8,
-What is the standard deviation of maximum heart rate among the patients?,number,['MaxHR'],['number[uint8]'],27.360170821258063,012_Heart.csv,27.360170821258063,
-What is the most common chest pain type among patients?,category,['ChestPainType'],['category'],ASY,012_Heart.csv,,
-What is the least common resting electrocardiographic result?,category,['RestingECG'],['category'],ST,012_Heart.csv,,
-What is the most common ST slope among patients with heart disease?,category,"['ST_Slope', 'HeartDisease']","['category', 'number[uint8]']",Flat,012_Heart.csv,,
-What is the least common chest pain type among male patients?,category,"['ChestPainType', 'Sex']","['category', 'category']",TA,012_Heart.csv,,
-What is the maximum speed (in mph) for roller coasters in the dataset?,number,[speed_mph],['number[double]'],62.0,013_Roller.csv,62.0,
-What is the average G-force across all roller coasters in the dataset?,number,[Gforce_clean],['number[double]'],3.62,013_Roller.csv,3.62,
-Which manufacturer has built the fastest roller coaster?,category,"[Manufacturer, speed_mph]","['category', 'number[double]']",Bolliger & Mabillard,013_Roller.csv,,
-What type of the roller coaster is the oldest in the dataset?,category,"[Type, Opening date]","['category', 'category']",Other,013_Roller.csv,,
-What is the location of the roller coaster with the highest number of inversions?,category,"[Location, Inversions_clean]","['category', 'number[uint8]']",Busch Gardens Tampa Bay,013_Roller.csv,,
-How many unique food groups are there in the dataset?,number,['GROUP'],['category'],8,015_Food.csv,8.0,
-How many unique sub groups are there in the dataset?,number,['SUB GROUP'],['category'],14,015_Food.csv,14.0,
-How many unique food items are there in the dataset?,number,['FOOD NAME'],['category'],20,015_Food.csv,20.0,
-What is the scientific name of the food named 'Colorado pinyon'?,category,"['FOOD NAME', 'SCIENTIFIC NAME']","['category', 'category']",Pinus edulis,015_Food.csv,,
-How many unique occupations are there in the dataset?,number,['Occupation'],['category'],3,016_Holiday.csv,3.0,
-How many unique designations are there in the dataset?,number,['Designation'],['category'],4,016_Holiday.csv,4.0,
-How many unique marital statuses are there in the dataset?,number,['MaritalStatus'],['category'],4,016_Holiday.csv,4.0,
-How many entries were posted in the morning?,number,['partofday'],['category'],1,017_Hacker.csv,1.0,
-What's the highest score received by an entry?,number,['score'],['number[uint16]'],2517,017_Hacker.csv,2517.0,
-"On average, how many descendants does an entry have?",number,['descendants'],['number[UInt16]'],558.0,017_Hacker.csv,558.0,
-How many entries are in the Autumn season?,number,['season'],['category'],8,017_Hacker.csv,8.0,
-Which day of the week has the most entries?,category,['weekday_name'],['category'],Wednesday,017_Hacker.csv,,
-What is the predominant language used in titles?,category,['title_gx_lang'],['category'],en,017_Hacker.csv,,
-In which season was the entry with the highest score posted?,category,"['score', 'season']","['number[uint16]', 'category']",Summer,017_Hacker.csv,,
-On which part of the day are most entries posted?,category,['partofday'],['category'],afternoon,017_Hacker.csv,,
-How many unique departments are there?,number,[Department],['category'],9,018_Staff.csv,9.0,
-What's the maximum number of years an employee has been in the company?,number,[Years in the Company],['number[uint8]'],6,018_Staff.csv,6.0,
-"On average, how many hours do employees work monthly?",number,[Average Monthly Hours],['number[uint16]'],188.15,018_Staff.csv,188.15,
-Which department has the highest number of employees?,category,[Department],['category'],support,018_Staff.csv,,
-What's the most common salary level among employees?,category,[salary],['category'],low,018_Staff.csv,,
-Which year had the highest number of employees hired?,category,[Date Hired],"['date[ns, UTC]']",2017,018_Staff.csv,2017.0,
+What is the maximum fare amount charged for a trip?,number,['fare_amount'],['number[double]'],40.8,004_Taxi.csv,40.8,"[(2, 3)]"
+How many unique pickup locations are in the dataset?,number,['PULocationID'],['number[uint16]'],18,004_Taxi.csv,18.0,"[(0, 8), (1, 8), (2, 8), (3, 8), (4, 8), (5, 8), (6, 8), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8), (12, 8), (13, 8), (15, 8), (16, 8), (18, 8), (19, 8)]"
+What is the average tip amount given by passengers?,number,['tip_amount'],['number[double]'],1.5,004_Taxi.csv,1.5,"[(0, 7), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (12, 7), (13, 7), (14, 7), (15, 7), (16, 7), (17, 7), (18, 7), (19, 7)]"
+Which payment type is the most common in the dataset?,category,['payment_type'],['number[uint8]'],1,004_Taxi.csv,1.0,"[(0, 1), (1, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (11, 1), (12, 1), (13, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1)]"
+Which vendor has the most trips recorded?,category,['VendorID'],['number[uint8]'],2,004_Taxi.csv,2.0,"[(1, 4), (2, 4), (3, 4), (4, 4), (6, 4), (7, 4), (8, 4), (9, 4), (10, 4), (12, 4), (13, 4), (17, 4)]"
+What is the most common drop-off location?,category,['DOLocationID'],['number[uint16]'],90,004_Taxi.csv,90.0,"[(3, 5), (4, 5), (9, 5)]"
+On which date did the first recorded trip occur?,category,['tpep_pickup_datetime'],"['date[ns, UTC]']",2023-02-01,004_Taxi.csv,,"[(0, 2)]"
+What's the total number of unique agencies handling complaints?,number,['agency'],['category'],7,005_NYC.csv,7.0,"[(0, 5), (1, 5), (3, 5), (4, 5), (5, 5), (11, 5), (15, 5)]"
+How many complaints were raised at midnight?,number,['hour'],['number[uint8]'],2,005_NYC.csv,2.0,"[(14, 6)]"
+How many unique descriptors are present in the dataset?,number,['descriptor'],['category'],16,005_NYC.csv,16.0,"[(0, 7), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (8, 7), (9, 7), (10, 7), (11, 7), (13, 7), (14, 7), (15, 7), (18, 7), (19, 7)]"
+Which borough has the most complaints?,category,['borough'],['category'],QUEENS,005_NYC.csv,,"[(1, 1), (3, 1), (7, 1), (9, 1), (11, 1), (12, 1), (13, 1), (14, 1), (19, 1)]"
+Which month sees the highest number of complaints?,category,['month_name'],['category'],January,005_NYC.csv,,"[(4, 3), (5, 3), (8, 3), (9, 3)]"
+Which weekday has the least complaints?,category,['weekday_name'],['category'],Thursday,005_NYC.csv,,"[(17, 4)]"
+Which agency is least frequently handling complaints?,category,['agency'],['category'],DOHMH,005_NYC.csv,,"[(4, 5)]"
+How many unique clubs are there in the dataset?,number,['Club<gx:category>'],['category'],19,007_Fifa.csv,19.0,"[(0, 11), (1, 11), (2, 11), (3, 11), (4, 11), (5, 11), (6, 11), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11)]"
+What is the highest value (in €) of a player in the dataset?,number,['Value_€<gx:currency>'],['number[uint32]'],13500000,007_Fifa.csv,13500000.0,"[(4, 10)]"
+How many players have the position 'ST'?,number,['Position<gx:category>'],['category'],1,007_Fifa.csv,1.0,"[(11, 3)]"
+What is the most common nationality in the dataset?,category,['Nationality<gx:category>'],['category'],Ghana,007_Fifa.csv,,"[(0, 8), (2, 8)]"
+What is the most common preferred foot amongst players?,category,['Preferred Foot<gx:category>'],['category'],Right,007_Fifa.csv,,"[(0, 5), (1, 5), (2, 5), (4, 5), (5, 5), (6, 5), (7, 5), (8, 5), (9, 5), (10, 5), (11, 5), (12, 5), (13, 5), (16, 5), (17, 5)]"
+Which club has the most players in the dataset?,category,['Club<gx:category>'],['category'],Lech Poznań,007_Fifa.csv,,"[(12, 11), (19, 11)]"
+What is the most common position of players in the dataset?,category,['Position<gx:category>'],['category'],SUB,007_Fifa.csv,,"[(0, 3), (2, 3), (4, 3), (8, 3), (9, 3), (10, 3), (12, 3), (13, 3), (14, 3), (15, 3)]"
+How many unique states are represented in the dataset?,number,[st],['category'],12,008_Tornados.csv,12.0,"[(0, 6), (1, 6), (2, 6), (3, 6), (4, 6), (7, 6), (8, 6), (9, 6), (12, 6), (15, 6), (16, 6), (18, 6)]"
+What is the highest magnitude of tornado recorded in the dataset?,number,[mag],['number[int8]'],2,008_Tornados.csv,2.0,"[(10, 3)]"
+What is the longest length of a tornado path in the dataset?,number,[len],['number[double]'],72.2,008_Tornados.csv,72.2,"[(11, 7)]"
+What is the maximum number of injuries caused by a single tornado?,number,[inj],['number[uint16]'],3,008_Tornados.csv,3.0,"[(16, 4)]"
+Which state has experienced the most tornadoes?,category,[st],['category'],IL,008_Tornados.csv,,"[(4, 6), (5, 6), (6, 6), (17, 6)]"
+In which month do most tornadoes occur?,category,[mo],['number[uint8]'],6,008_Tornados.csv,6.0,"[(4, 5), (6, 5), (7, 5), (11, 5), (18, 5)]"
+On what date did the most destructive tornado (by injuries) occur?,category,"[date, inj]","['date[ns, UTC]', 'number[uint16]']",1973-03-15,008_Tornados.csv,,"[(16, 0)]"
+On what date did the longest tornado (by path length) occur?,category,"[date, len]","['date[ns, UTC]', 'number[double]']",1955-06-04,008_Tornados.csv,,"[(11, 0)]"
+What is the highest recorded precipitation in inches?,number,[PRCP],['number[double]'],0.66,009_Central.csv,0.66,"[(2, 1)]"
+What is the lowest minimum temperature recorded?,number,[TMIN],['number[Int8]'],-13.0,009_Central.csv,-13.0,"[(6, 0)]"
+What is the highest maximum temperature recorded?,number,[TMAX],['number[UInt8]'],81.0,009_Central.csv,81.0,"[(2, 4)]"
+What is the deepest recorded snow depth in inches?,number,[SNWD],['number[UInt8]'],4.0,009_Central.csv,4.0,"[(1, 3)]"
+On which date was the highest precipitation recorded?,category,"[DATE, PRCP]","['date[ns, UTC]', 'number[double]']",1891-07-24,009_Central.csv,,"[(2, 2)]"
+On which date was the lowest minimum temperature recorded?,category,"[DATE, TMIN]","['date[ns, UTC]', 'number[Int8]']",1917-12-30,009_Central.csv,,"[(6, 2)]"
+On which date was the highest maximum temperature recorded?,category,"[DATE, TMAX]","['date[ns, UTC]', 'number[UInt8]']",1891-07-24,009_Central.csv,,"[(2, 2)]"
+On which date was the deepest snow depth recorded?,category,"[DATE, SNWD]","['date[ns, UTC]', 'number[UInt8]']",1945-02-03,009_Central.csv,,"[(1, 2)]"
+What is the average age of the reviewers?,number,[Age],['number[uint8]'],39.65,010_ECommerce.csv,39.65,"[(0, 2), (1, 2), (2, 2), (3, 2), (4, 2), (5, 2), (6, 2), (7, 2), (8, 2), (9, 2), (10, 2), (11, 2), (12, 2), (13, 2), (14, 2), (15, 2), (16, 2), (17, 2), (18, 2), (19, 2)]"
+What's the highest number of positive feedback received for a review?,number,[Positive Feedback Count],['number[uint8]'],19,010_ECommerce.csv,19.0,"[(0, 0)]"
+What is the most common rating given by reviewers?,number,[Rating],['number[uint8]'],5,010_ECommerce.csv,5.0,"[(4, 5), (5, 5), (7, 5), (8, 5), (9, 5), (10, 5), (13, 5), (15, 5), (17, 5), (19, 5)]"
+How many unique clothing items are there in the dataset?,number,[Clothing ID],['number[uint16]'],20,010_ECommerce.csv,20.0,"[(0, 1), (1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1)]"
+Which department has the most reviews?,category,['Department Name'],['category'],Dresses,010_ECommerce.csv,,"[(0, 3), (4, 3), (7, 3), (10, 3), (12, 3), (13, 3), (19, 3)]"
+Which class of clothing is most commonly reviewed?,category,['Class Name'],['category'],Dresses,010_ECommerce.csv,,"[(0, 5), (4, 5), (7, 5), (10, 5), (12, 5), (13, 5), (19, 5)]"
+Which division is most commonly mentioned in the reviews?,category,['Division Name'],['category'],General,010_ECommerce.csv,,"[(0, 6), (2, 6), (4, 6), (7, 6), (8, 6), (12, 6), (14, 6), (15, 6), (17, 6), (18, 6)]"
+What is the most frequently reviewed clothing item? If you find a tie answer with row order.,category,['Clothing ID'],['number[uint16]'],1095,010_ECommerce.csv,1095.0,"[(0, 1)]"
+How many unique types of incident categories are there in the dataset?,number,[Incident Category],['category'],11,011_SF.csv,11.0,"[(0, 1), (2, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (13, 1), (16, 1), (18, 1), (19, 1)]"
+What's the total number of incidents reported online?,number,[Filed Online],['boolean'],1,011_SF.csv,1.0,"[(5, 9)]"
+How many different police districts are there in the dataset?,number,[Police District],['category'],9,011_SF.csv,9.0,"[(0, 7), (1, 7), (3, 7), (4, 7), (5, 7), (8, 7), (9, 7), (10, 7), (14, 7)]"
+What is the average incident count per year?,number,[Incident Year],['number[uint16]'],3.3333333333333335,011_SF.csv,3.3333333333333335,"[(0, 8), (1, 8), (2, 8), (3, 8), (4, 8), (5, 8), (6, 8), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8), (12, 8), (13, 8), (14, 8), (15, 8), (16, 8), (17, 8), (18, 8), (19, 8)]"
+What is the most common incident category?,category,[Incident Category],['category'],Larceny Theft,011_SF.csv,,"[(2, 1), (4, 1), (5, 1), (5, 1), (15, 1)]"
+Which day of the week has the highest number of incidents?,category,[Incident Day of Week],['category'],Saturday,011_SF.csv,,"[(5, 4), (8, 4), (14, 4), (17, 4), (19, 4)]"
+What is the most common resolution for incidents reported online?,category,"[Filed Online, Resolution]","['boolean', 'category']",Open or Active,011_SF.csv,,"[(5, 6)]"
+What is the Police District with the most incidents?,category,[Police District],['category'],Northern,011_SF.csv,,"[(4, 7), (6, 7), (17, 7), (16, 7)]"
+What is the maximum age of patients in the dataset?,number,['Age'],['number[uint8]'],69,012_Heart.csv,69.0,"[(7, 1)]"
+What is the minimum resting blood pressure among the patients?,number,['RestingBP'],['number[uint8]'],95,012_Heart.csv,95.0,"[(17, 2)]"
+What is the average cholesterol level in the dataset?,number,['Cholesterol'],['number[uint16]'],207.8,012_Heart.csv,207.8,"[(0, 0), (1, 0), (4, 0), (5, 0), (7, 0), (8, 0), (10, 0), (11, 0), (12, 0), (13, 0), (14, 0), (16, 0), (18, 0), (19, 0)]"
+What is the standard deviation of maximum heart rate among the patients?,number,['MaxHR'],['number[uint8]'],27.360170821258063,012_Heart.csv,27.360170821258063,"[(0, 7), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (12, 7), (13, 7), (14, 7), (15, 7), (16, 7), (17, 7), (18, 7), (19, 7)]"
+What is the most common chest pain type among patients?,category,['ChestPainType'],['category'],ASY,012_Heart.csv,,"[(2, 5), (3, 5), (5, 5), (6, 5), (9, 5), (12, 5), (14, 5), (15, 5), (17, 5), (18, 5)]"
+What is the least common resting electrocardiographic result?,category,['RestingECG'],['category'],ST,012_Heart.csv,,"[(2, 6), (6, 6)]"
+What is the most common ST slope among patients with heart disease?,category,"['ST_Slope', 'HeartDisease']","['category', 'number[uint8]']",Flat,012_Heart.csv,,"[(1, 4), (2, 4), (3, 4), (5, 4), (6, 4), (8, 4), (10, 4), (12, 4), (14, 4), (18, 4), (19, 4)]"
+What is the least common chest pain type among male patients?,category,"['ChestPainType', 'Sex']","['category', 'category']",TA,012_Heart.csv,,"[(8, 6), (10, 6)]"
+What is the maximum speed (in mph) for roller coasters in the dataset?,number,[speed_mph],['number[double]'],62.0,013_Roller.csv,62.0,"[(12, 8)]"
+What is the average G-force across all roller coasters in the dataset?,number,[Gforce_clean],['number[double]'],3.62,013_Roller.csv,3.62,"[(3, 5), (4, 5), (9, 5), (10, 5), (11, 5)]"
+Which manufacturer has built the fastest roller coaster?,category,"[Manufacturer, speed_mph]","['category', 'number[double]']",Bolliger & Mabillard,013_Roller.csv,,"[(12, 3)]"
+What type of the roller coaster is the oldest in the dataset?,category,"[Type, Opening date]","['category', 'category']",Other,013_Roller.csv,,"[(1, 6)]"
+What is the location of the roller coaster with the highest number of inversions?,category,"[Location, Inversions_clean]","['category', 'number[uint8]']",Busch Gardens Tampa Bay,013_Roller.csv,,"[(15, 10)]"
+How many unique food groups are there in the dataset?,number,['GROUP'],['category'],8,015_Food.csv,8.0,"[(0, 2), (1, 2), (2, 2), (3, 2), (7, 2), (8, 2), (9, 2), (18, 2)]"
+How many unique sub groups are there in the dataset?,number,['SUB GROUP'],['category'],14,015_Food.csv,14.0,"[(0, 3), (1, 3), (2, 3), (3, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (12, 3), (15, 3), (17, 3), (18, 3), (19, 3)]"
+How many unique food items are there in the dataset?,number,['FOOD NAME'],['category'],20,015_Food.csv,20.0,"[(1, 0), (2, 0), (3, 0), (4, 0), (5, 0), (6, 0), (7, 0), (8, 0), (9, 0), (10, 0), (11, 0), (12, 0), (13, 0), (14, 0), (15, 0), (16, 0), (17, 0), (18, 0), (19, 0), (0, 0)]"
+What is the scientific name of the food named 'Colorado pinyon'?,category,"['FOOD NAME', 'SCIENTIFIC NAME']","['category', 'category']",Pinus edulis,015_Food.csv,,"[(1, 1)]"
+How many unique occupations are there in the dataset?,number,['Occupation'],['category'],3,016_Holiday.csv,3.0,"[(0, 6), (4, 6), (5, 6)]"
+How many unique designations are there in the dataset?,number,['Designation'],['category'],4,016_Holiday.csv,4.0,"[(0, 18), (4, 18), (5, 18), (10, 18)]"
+How many unique marital statuses are there in the dataset?,number,['MaritalStatus'],['category'],4,016_Holiday.csv,4.0,"[(0, 12), (3, 12), (9, 12), (10, 12)]"
+How many entries were posted in the morning?,number,['partofday'],['category'],1,017_Hacker.csv,1.0,"[(3, 3)]"
+What's the highest score received by an entry?,number,['score'],['number[uint16]'],2517,017_Hacker.csv,2517.0,"[(12, 2)]"
+"On average, how many descendants does an entry have?",number,['descendants'],['number[UInt16]'],558.0,017_Hacker.csv,558.0,"[(0, 8), (1, 8), (2, 8), (3, 8), (4, 8), (5, 8), (6, 8), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8), (12, 8), (13, 8), (14, 8), (15, 8), (16, 8), (17, 8), (18, 8), (19, 8)]"
+How many entries are in the Autumn season?,number,['season'],['category'],8,017_Hacker.csv,8.0,"[(0, 9), (2, 9), (4, 9), (11, 9), (14, 9), (15, 9), (16, 9), (18, 9)]"
+Which day of the week has the most entries?,category,['weekday_name'],['category'],Wednesday,017_Hacker.csv,,"[(1, 6), (2, 6), (9, 6), (10, 6), (13, 6), (15, 6)]"
+What is the predominant language used in titles?,category,['title_gx_lang'],['category'],en,017_Hacker.csv,,"[(0, 5), (1, 5), (2, 5), (3, 5), (5, 5), (6, 5), (7, 5), (8, 5), (9, 5), (10, 5), (11, 5), (13, 5), (14, 5), (16, 5), (17, 5), (18, 5), (19, 5)]"
+In which season was the entry with the highest score posted?,category,"['score', 'season']","['number[uint16]', 'category']",Summer,017_Hacker.csv,,"[(12, 9)]"
+On which part of the day are most entries posted?,category,['partofday'],['category'],afternoon,017_Hacker.csv,,"[(0, 3), (2, 3), (4, 3), (5, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3)]"
+How many unique departments are there?,number,[Department],['category'],9,018_Staff.csv,9.0,"[(0, 1), (1, 1), (2, 1), (3, 1), (5, 1), (9, 1), (11, 1), (12, 1), (18, 1)]"
+What's the maximum number of years an employee has been in the company?,number,[Years in the Company],['number[uint8]'],6,018_Staff.csv,6.0,"[(9, 6)]"
+"On average, how many hours do employees work monthly?",number,[Average Monthly Hours],['number[uint16]'],188.15,018_Staff.csv,188.15,"[(0, 8), (1, 8), (2, 8), (3, 8), (4, 8), (5, 8), (6, 8), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8), (12, 8), (13, 8), (14, 8), (15, 8), (16, 8), (17, 8), (18, 8), (19, 8)]"
+Which department has the highest number of employees?,category,[Department],['category'],support,018_Staff.csv,,"[(0, 1)]"
+What's the most common salary level among employees?,category,[salary],['category'],low,018_Staff.csv,,"[(1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (8, 7), (9, 7), (11, 7), (12, 7), (13, 7), (14, 7), (17, 7), (18, 7)]"
+Which year had the highest number of employees hired?,category,[Date Hired],"['date[ns, UTC]']",2017,018_Staff.csv,2017.0,"[(1, 10)]"
 How many unique aircraft models are in the dataset?,number,['Aircaft_Model'],['category'],20,019_Aircraft.csv,20.0,"[(0, 4), (1, 4), (2, 4), (3, 4), (4, 4), (5, 4), (6, 4), (7, 4), (8, 4), (9, 4), (10, 4), (11, 4), (12, 4), (13, 4), (14, 4), (15, 4), (16, 4), (17, 4), (18, 4), (19, 4)]"
 What's the highest number of occupants recorded in an incident?,number,['Onboard_Total'],['category'],86,019_Aircraft.csv,86.0,"[(16, 3)]"
 How many incidents resulted in non-zero fatalities?,number,['Fatalities'],['number[uint16]'],10,019_Aircraft.csv,10.0,"[(0, 8), (1, 8), (9, 8), (10, 8), (11, 8), (12, 8), (17, 8), (18, 8), (19, 8)]"
