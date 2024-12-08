@@ -48,12 +48,6 @@ The most critical insight is the pathway towards more accessible, human-readable
 2. Limited training and development set size.
 3. Potential for perpetuating historical biases in source datasets.
 
-## Future Work
-
-1. Develop automated annotation techniques
-2. Expand dataset diversity
-3. Create more sophisticated natural language understanding techniques
-
 ## References
 
 1. Grijalba, J. O., et al. (2024). SemEval 2025 Task 8: Question Answering on Tabular Data. LREC-COLING 2024.
