@@ -1,5 +1,3 @@
-I'll convert the LaTeX document to Markdown, preserving the key sections and the table. I'll use the paper's title as the main header and maintain the key sections:
-
 # Tabular Data Question-Answering: Integrating DataBench and TAPAS
 
 **Author:** Carter Louchheim, Williams College
