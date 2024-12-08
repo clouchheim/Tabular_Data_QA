@@ -5,19 +5,19 @@
 
 ## Abstract
 
-This paper addresses a subsection of SemEval Task 8 SubTask 2, which focuses on developing the most effective Question Answering (QA) system for tabular data using the newly created DataBench dataset. Leveraging TAPAS, a BERT-based model specifically designed for tabular data QA, I fine-tuned the weakly supervised WTQ version of TAPAS on a subset of number and category-answer questions from DataBench. 
+This paper addresses a subsection of SemEval Task 8 SubTask 2 [1], which focuses on developing the most effective Question Answering (QA) system for tabular data using the newly created DataBench dataset. Leveraging TAPAS [2], a BERT-based model specifically designed for tabular data QA, I fine-tuned the weakly supervised WTQ version of TAPAS on a subset of number and category-answer questions from DataBench. 
 
-Preliminary results demonstrate that the TAPAS WTQ model, not finetuned on the DataBench data, outperforms Z-ICL and Code Prompt strategies in these answer types. However, the study is constrained by the manual annotation of answer coordinates, essential for TAPAS training, and the limited diversity of the annotated dataset, raising concerns about potential overfitting. These findings highlight TAPAS's promise in tabular data QA while emphasizing the need for broader datasets and automated annotation tools to improve scalability and generalization.
+Preliminary results demonstrate that the TAPAS WTQ model, not finetuned on the DataBench data, outperforms Z-ICL and Code Prompt strategies [3] in these answer types. However, the study is constrained by the manual annotation of answer coordinates, essential for TAPAS training, and the limited diversity of the annotated dataset, raising concerns about potential overfitting. These findings highlight TAPAS's promise in tabular data QA while emphasizing the need for broader datasets and automated annotation tools to improve scalability and generalization.
 
 ## Introduction
 
 Accurately answering questions based on tabular data is a critical challenge in natural language processing (NLP), with applications spanning domains such as medicine, finance, and other data-rich industries. While humans often find it difficult to quickly parse complex tables, natural language interfaces that bridge this gap can significantly improve accessibility and decision-making. 
 
-To address this need, the SemEval 2025 Task 8 introduced the DataBench benchmark, a novel dataset comprising real-world tables with diverse data types, domains, and question formats. This dataset serves as a standard for evaluating systems capable of answering numerical, categorical, boolean, and list-based questions.
+To address this need, the SemEval 2025 Task 8 introduced the DataBench benchmark [1], a novel dataset comprising real-world tables with diverse data types, domains, and question formats. This dataset serves as a standard for evaluating systems capable of answering numerical, categorical, boolean, and list-based questions.
 
 Despite advances in tabular question-answering (QA) systems, current state-of-the-art models achieve only approximately 75% accuracy on number and category-based questions and struggle further—achieving just about 35% accuracy—on tasks that do not require Python interpreters.
 
-## Performance Metrics Table
+## Performance Metrics
 
 | MODEL | altered questions | overall accuracy | number accuracy | category accuracy |
 |-------|-------------------|-----------------|----------------|------------------|
@@ -28,8 +28,6 @@ Despite advances in tabular question-answering (QA) systems, current state-of-th
 | Model 1-alter | TRUE | **0.483** | 0.448 | 0.515 |
 | Model 1 | FALSE | 0.426 | **0.482** | 0.375 |
 | Model 1 | TRUE | 0.409 | 0.465 | 0.359 |
-
-*Note: Accuracies for Z-ICL Prompt 2 act as a baseline for DataBench accuracies, calculated on the true DataBench test set that was not available during this project*
 
 ## Key Findings
 
@@ -55,3 +53,13 @@ The most critical insight is the pathway towards more accessible, human-readable
 1. Develop automated annotation techniques
 2. Expand dataset diversity
 3. Create more sophisticated natural language understanding techniques
+
+## References
+
+1. Grijalba, J. O., et al. (2024). SemEval 2025 Task 8: Question Answering on Tabular Data. LREC-COLING 2024.
+
+2. Herzig, J., et al. (2020). TAPAS: Weakly Supervised Table Parsing via Pre-Training. *arXiv preprint* arXiv:2004.02349.
+
+3. Grijalba, J. O., et al. (2024). Question Answering over Tabular Data with DataBench: A Large-Scale Empirical Evaluation of LLMs. LREC-COLING 2024.
+
+4. Badaro, G., & Papotti, P. (2022). Transformers for Tabular Data Representation: A Tutorial on Models and Applications. *Proceedings of the VLDB Endowment*, 15(12), 3746–3749.
